@@ -1,136 +1,12 @@
 {
-  "lastUpdated": "2026-06-13T12:00:00+02:00",
+  "lastUpdated": "2026-06-14T10:00:00+02:00",
   "races": [
-    {
-      "id": "australia",
-      "name": "GP Australia",
-      "track": "Albert Park Circuit, Melbourne",
-      "dates": "6–8 Marzo",
-      "raceDateTimeISO": "2026-03-08T05:00:00+01:00",
-      "done": true,
-      "sessions": [
-        {"day":"VEN","date":"6","name":"Prove Libere 1","time":"02:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"VEN","date":"6","name":"Prove Libere 2","time":"06:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"7","name":"Prove Libere 3","time":"02:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"7","name":"Qualifiche","time":"06:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"DOM","date":"8","name":"Gara","time":"05:00","isRace":true,"channels":[{"name":"Sky Sport F1 / Uno","type":"pay"}]}
-      ]
-    },
-    {
-      "id": "cina",
-      "name": "GP Cina",
-      "track": "Shanghai International Circuit",
-      "dates": "13–15 Marzo",
-      "raceDateTimeISO": "2026-03-15T08:00:00+01:00",
-      "done": true,
-      "sprint": true,
-      "sessions": [
-        {"day":"VEN","date":"13","name":"Prove Libere 1","time":"04:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"VEN","date":"13","name":"Qualifiche Sprint","time":"08:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"14","name":"Sprint Race","time":"04:00","channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (diretta)","type":"free"}]},
-        {"day":"SAB","date":"14","name":"Qualifiche","time":"08:00","channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (diretta)","type":"free"}]},
-        {"day":"DOM","date":"15","name":"Gara","time":"08:00","isRace":true,"channels":[{"name":"Sky Sport F1 / Uno","type":"pay"}]}
-      ]
-    },
-    {
-      "id": "giappone",
-      "name": "GP Giappone",
-      "track": "Suzuka International Racing Course",
-      "dates": "27–29 Marzo",
-      "raceDateTimeISO": "2026-03-29T07:00:00+02:00",
-      "done": true,
-      "sessions": [
-        {"day":"VEN","date":"27","name":"Prove Libere 1","time":"03:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"VEN","date":"27","name":"Prove Libere 2","time":"07:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"28","name":"Prove Libere 3","time":"03:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"28","name":"Qualifiche","time":"07:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"DOM","date":"29","name":"Gara","time":"07:00","isRace":true,"channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (differita 14:15)","type":"free"}]}
-      ]
-    },
-    {
-      "id": "bahrain",
-      "name": "GP Bahrain",
-      "track": "Bahrain International Circuit, Sakhir",
-      "dates": "10–12 Aprile",
-      "raceDateTimeISO": "2026-04-12T17:00:00+02:00",
-      "done": true,
-      "sessions": [
-        {"day":"VEN","date":"10","name":"Prove Libere 1","time":"13:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"VEN","date":"10","name":"Prove Libere 2","time":"17:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"11","name":"Prove Libere 3","time":"14:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"11","name":"Qualifiche","time":"18:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"DOM","date":"12","name":"Gara","time":"17:00","isRace":true,"channels":[{"name":"Sky Sport F1 / Uno","type":"pay"}]}
-      ]
-    },
-    {
-      "id": "arabia",
-      "name": "GP Arabia Saudita",
-      "track": "Jeddah Corniche Circuit",
-      "dates": "17–19 Aprile",
-      "raceDateTimeISO": "2026-04-19T19:00:00+02:00",
-      "done": true,
-      "sessions": [
-        {"day":"VEN","date":"17","name":"Prove Libere 1","time":"15:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"VEN","date":"17","name":"Prove Libere 2","time":"19:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"18","name":"Prove Libere 3","time":"15:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"18","name":"Qualifiche","time":"19:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"DOM","date":"19","name":"Gara","time":"19:00","isRace":true,"channels":[{"name":"Sky Sport F1 / Uno","type":"pay"}]}
-      ]
-    },
-    {
-      "id": "miami",
-      "name": "GP Miami",
-      "track": "Miami International Autodrome",
-      "dates": "1–3 Maggio",
-      "raceDateTimeISO": "2026-05-03T22:00:00+02:00",
-      "done": true,
-      "sprint": true,
-      "sessions": [
-        {"day":"VEN","date":"1","name":"Prove Libere 1","time":"18:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"VEN","date":"1","name":"Qualifiche Sprint","time":"22:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"2","name":"Sprint Race","time":"18:00","channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (diretta)","type":"free"}]},
-        {"day":"SAB","date":"2","name":"Qualifiche","time":"22:00","channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (diretta)","type":"free"}]},
-        {"day":"DOM","date":"3","name":"Gara","time":"22:00","isRace":true,"channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (differita 23:30)","type":"free"}]}
-      ]
-    },
-    {
-      "id": "canada",
-      "name": "GP Canada",
-      "track": "Circuit Gilles Villeneuve, Montréal",
-      "dates": "22–24 Maggio",
-      "raceDateTimeISO": "2026-05-24T22:00:00+02:00",
-      "done": true,
-      "sprint": true,
-      "sessions": [
-        {"day":"VEN","date":"22","name":"Prove Libere 1","time":"19:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"VEN","date":"22","name":"Qualifiche Sprint","time":"22:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"23","name":"Sprint Race","time":"18:00","channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (diretta)","type":"free"}]},
-        {"day":"SAB","date":"23","name":"Qualifiche","time":"22:00","channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (diretta)","type":"free"}]},
-        {"day":"DOM","date":"24","name":"Gara","time":"22:00","isRace":true,"channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (differita 23:30)","type":"free"}]}
-      ]
-    },
-    {
-      "id": "monaco",
-      "name": "GP Monaco",
-      "track": "Circuit de Monaco, Monte-Carlo",
-      "dates": "5–7 Giugno",
-      "raceDateTimeISO": "2026-06-07T15:00:00+02:00",
-      "done": true,
-      "sessions": [
-        {"day":"VEN","date":"5","name":"Prove Libere 1","time":"13:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"VEN","date":"5","name":"Prove Libere 2","time":"17:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"6","name":"Prove Libere 3","time":"12:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"6","name":"Qualifiche","time":"16:00","channels":[{"name":"Sky Sport F1","type":"pay"},{"name":"TV8 (differita 19:00)","type":"free"}]},
-        {"day":"DOM","date":"7","name":"Gara","time":"15:00","isRace":true,"channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (differita 18:30)","type":"free"}]}
-      ]
-    },
     {
       "id": "spagna",
       "name": "GP Spagna",
       "track": "Circuit de Barcelona-Catalunya",
       "dates": "12–14 Giugno",
       "raceDateTimeISO": "2026-06-14T15:00:00+02:00",
-      "next": true,
       "sessions": [
         {"day":"VEN","date":"12","name":"Prove Libere 1","time":"13:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
         {"day":"VEN","date":"12","name":"Prove Libere 2","time":"17:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
@@ -149,22 +25,21 @@
         {"day":"VEN","date":"26","name":"Prove Libere 1","time":"13:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
         {"day":"VEN","date":"26","name":"Prove Libere 2","time":"17:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
         {"day":"SAB","date":"27","name":"Prove Libere 3","time":"12:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"27","name":"Qualifiche","time":"16:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
+        {"day":"SAB","date":"27","name":"Qualifiche","time":"16:00","channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8","type":"free"}]},
         {"day":"DOM","date":"28","name":"Gara","time":"15:00","isRace":true,"channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (differita)","type":"free"}]}
       ]
     },
     {
-      "id": "gran-bretagna",
+      "id": "gran_bretagna",
       "name": "GP Gran Bretagna",
       "track": "Silverstone Circuit",
       "dates": "3–5 Luglio",
       "raceDateTimeISO": "2026-07-05T16:00:00+02:00",
-      "sprint": true,
       "sessions": [
         {"day":"VEN","date":"3","name":"Prove Libere 1","time":"13:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"VEN","date":"3","name":"Qualifiche Sprint","time":"17:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"4","name":"Sprint Race","time":"12:30","channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (diretta)","type":"free"}]},
-        {"day":"SAB","date":"4","name":"Qualifiche","time":"16:00","channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (diretta)","type":"free"}]},
+        {"day":"VEN","date":"3","name":"Qualifiche Sprint","time":"17:30","channels":[{"name":"Sky Sport F1","type":"pay"},{"name":"TV8","type":"free"}]},
+        {"day":"SAB","date":"4","name":"Sprint Race","time":"13:00","channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8","type":"free"}]},
+        {"day":"SAB","date":"4","name":"Qualifiche","time":"17:00","channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8","type":"free"}]},
         {"day":"DOM","date":"5","name":"Gara","time":"16:00","isRace":true,"channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (differita)","type":"free"}]}
       ]
     },
@@ -176,9 +51,9 @@
       "raceDateTimeISO": "2026-07-19T15:00:00+02:00",
       "sessions": [
         {"day":"VEN","date":"17","name":"Prove Libere 1","time":"13:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"VEN","date":"17","name":"Prove Libere 2","time":"16:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"18","name":"Prove Libere 3","time":"12:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"18","name":"Qualifiche","time":"16:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
+        {"day":"VEN","date":"17","name":"Prove Libere 2","time":"17:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
+        {"day":"SAB","date":"18","name":"Prove Libere 3","time":"12:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
+        {"day":"SAB","date":"18","name":"Qualifiche","time":"16:00","channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8","type":"free"}]},
         {"day":"DOM","date":"19","name":"Gara","time":"15:00","isRace":true,"channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (differita)","type":"free"}]}
       ]
     },
@@ -192,7 +67,7 @@
         {"day":"VEN","date":"24","name":"Prove Libere 1","time":"13:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
         {"day":"VEN","date":"24","name":"Prove Libere 2","time":"17:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
         {"day":"SAB","date":"25","name":"Prove Libere 3","time":"12:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"25","name":"Qualifiche","time":"16:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
+        {"day":"SAB","date":"25","name":"Qualifiche","time":"16:00","channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8","type":"free"}]},
         {"day":"DOM","date":"26","name":"Gara","time":"15:00","isRace":true,"channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (differita)","type":"free"}]}
       ]
     },
@@ -202,12 +77,11 @@
       "track": "Circuit Zandvoort",
       "dates": "21–23 Agosto",
       "raceDateTimeISO": "2026-08-23T15:00:00+02:00",
-      "sprint": true,
       "sessions": [
-        {"day":"VEN","date":"21","name":"Prove Libere 1","time":"12:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"VEN","date":"21","name":"Qualifiche Sprint","time":"16:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"22","name":"Sprint Race","time":"11:30","channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (diretta)","type":"free"}]},
-        {"day":"SAB","date":"22","name":"Qualifiche","time":"15:00","channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (diretta)","type":"free"}]},
+        {"day":"VEN","date":"21","name":"Prove Libere 1","time":"13:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
+        {"day":"VEN","date":"21","name":"Qualifiche Sprint","time":"17:30","channels":[{"name":"Sky Sport F1","type":"pay"},{"name":"TV8","type":"free"}]},
+        {"day":"SAB","date":"22","name":"Sprint Race","time":"13:00","channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8","type":"free"}]},
+        {"day":"SAB","date":"22","name":"Qualifiche","time":"17:00","channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8","type":"free"}]},
         {"day":"DOM","date":"23","name":"Gara","time":"15:00","isRace":true,"channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (differita)","type":"free"}]}
       ]
     },
@@ -218,16 +92,16 @@
       "dates": "4–6 Settembre",
       "raceDateTimeISO": "2026-09-06T15:00:00+02:00",
       "sessions": [
-        {"day":"VEN","date":"4","name":"Prove Libere 1","time":"13:30","channels":[{"name":"Sky Sport F1","type":"pay"},{"name":"TV8","type":"free"}]},
-        {"day":"VEN","date":"4","name":"Prove Libere 2","time":"17:00","channels":[{"name":"Sky Sport F1","type":"pay"},{"name":"TV8","type":"free"}]},
-        {"day":"SAB","date":"5","name":"Prove Libere 3","time":"12:30","channels":[{"name":"Sky Sport F1","type":"pay"},{"name":"TV8","type":"free"}]},
-        {"day":"SAB","date":"5","name":"Qualifiche","time":"16:00","channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (diretta)","type":"free"}]},
-        {"day":"DOM","date":"6","name":"Gara","time":"15:00","isRace":true,"channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (diretta)","type":"free"}]}
+        {"day":"VEN","date":"4","name":"Prove Libere 1","time":"13:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
+        {"day":"VEN","date":"4","name":"Prove Libere 2","time":"17:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
+        {"day":"SAB","date":"5","name":"Prove Libere 3","time":"12:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
+        {"day":"SAB","date":"5","name":"Qualifiche","time":"16:00","channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8","type":"free"}]},
+        {"day":"DOM","date":"6","name":"Gara","time":"15:00","isRace":true,"channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8","type":"free"}]}
       ]
     },
     {
       "id": "madrid",
-      "name": "GP Spagna (Madrid)",
+      "name": "GP Madrid",
       "track": "Circuito Urbano de Madrid",
       "dates": "11–13 Settembre",
       "raceDateTimeISO": "2026-09-13T15:00:00+02:00",
@@ -235,7 +109,7 @@
         {"day":"VEN","date":"11","name":"Prove Libere 1","time":"13:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
         {"day":"VEN","date":"11","name":"Prove Libere 2","time":"17:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
         {"day":"SAB","date":"12","name":"Prove Libere 3","time":"12:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"12","name":"Qualifiche","time":"16:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
+        {"day":"SAB","date":"12","name":"Qualifiche","time":"16:00","channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8","type":"free"}]},
         {"day":"DOM","date":"13","name":"Gara","time":"15:00","isRace":true,"channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (differita)","type":"free"}]}
       ]
     },
@@ -246,10 +120,10 @@
       "dates": "24–26 Settembre",
       "raceDateTimeISO": "2026-09-26T13:00:00+02:00",
       "sessions": [
-        {"day":"VEN","date":"24","name":"Prove Libere 1","time":"10:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"VEN","date":"24","name":"Prove Libere 2","time":"14:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
+        {"day":"VEN","date":"24","name":"Prove Libere 1","time":"11:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
+        {"day":"VEN","date":"24","name":"Prove Libere 2","time":"15:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
         {"day":"SAB","date":"25","name":"Prove Libere 3","time":"10:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"25","name":"Qualifiche","time":"14:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
+        {"day":"SAB","date":"25","name":"Qualifiche","time":"14:00","channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8","type":"free"}]},
         {"day":"DOM","date":"26","name":"Gara","time":"13:00","isRace":true,"channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (differita)","type":"free"}]}
       ]
     },
@@ -259,41 +133,40 @@
       "track": "Marina Bay Street Circuit",
       "dates": "9–11 Ottobre",
       "raceDateTimeISO": "2026-10-11T14:00:00+02:00",
-      "sprint": true,
       "sessions": [
         {"day":"VEN","date":"9","name":"Prove Libere 1","time":"11:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"VEN","date":"9","name":"Qualifiche Sprint","time":"15:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"10","name":"Sprint Race","time":"11:30","channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (diretta)","type":"free"}]},
-        {"day":"SAB","date":"10","name":"Qualifiche","time":"15:00","channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (diretta)","type":"free"}]},
+        {"day":"VEN","date":"9","name":"Qualifiche Sprint","time":"15:30","channels":[{"name":"Sky Sport F1","type":"pay"},{"name":"TV8","type":"free"}]},
+        {"day":"SAB","date":"10","name":"Sprint Race","time":"11:00","channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8","type":"free"}]},
+        {"day":"SAB","date":"10","name":"Qualifiche","time":"15:00","channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8","type":"free"}]},
         {"day":"DOM","date":"11","name":"Gara","time":"14:00","isRace":true,"channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (differita)","type":"free"}]}
       ]
     },
     {
-      "id": "usa-austin",
-      "name": "GP USA (Austin)",
+      "id": "usa",
+      "name": "GP USA",
       "track": "Circuit of the Americas, Austin",
       "dates": "23–25 Ottobre",
-      "raceDateTimeISO": "2026-10-25T21:00:00+01:00",
+      "raceDateTimeISO": "2026-10-25T22:00:00+02:00",
       "sessions": [
-        {"day":"VEN","date":"23","name":"Prove Libere 1","time":"19:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"VEN","date":"23","name":"Prove Libere 2","time":"23:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"24","name":"Prove Libere 3","time":"19:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"24","name":"Qualifiche","time":"23:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"DOM","date":"25","name":"Gara","time":"21:00","isRace":true,"channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (differita)","type":"free"}]}
+        {"day":"VEN","date":"23","name":"Prove Libere 1","time":"20:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
+        {"day":"VEN","date":"23","name":"Prove Libere 2","time":"00:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
+        {"day":"SAB","date":"24","name":"Prove Libere 3","time":"19:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
+        {"day":"SAB","date":"24","name":"Qualifiche","time":"23:00","channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8","type":"free"}]},
+        {"day":"DOM","date":"25","name":"Gara","time":"22:00","isRace":true,"channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (differita)","type":"free"}]}
       ]
     },
     {
       "id": "messico",
       "name": "GP Messico",
-      "track": "Autodromo Hermanos Rodriguez, Città del Messico",
-      "dates": "31 Ott–2 Nov",
+      "track": "Autodromo Hermanos Rodriguez",
+      "dates": "30 Ott–1 Nov",
       "raceDateTimeISO": "2026-11-01T21:00:00+01:00",
       "sessions": [
-        {"day":"VEN","date":"31","name":"Prove Libere 1","time":"20:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"VEN","date":"31","name":"Prove Libere 2","time":"24:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"1","name":"Prove Libere 3","time":"19:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"1","name":"Qualifiche","time":"23:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"DOM","date":"2","name":"Gara","time":"21:00","isRace":true,"channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (differita)","type":"free"}]}
+        {"day":"VEN","date":"30","name":"Prove Libere 1","time":"19:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
+        {"day":"VEN","date":"30","name":"Prove Libere 2","time":"23:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
+        {"day":"SAB","date":"31","name":"Prove Libere 3","time":"19:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
+        {"day":"SAB","date":"31","name":"Qualifiche","time":"23:00","channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8","type":"free"}]},
+        {"day":"DOM","date":"1","name":"Gara","time":"21:00","isRace":true,"channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (differita)","type":"free"}]}
       ]
     },
     {
@@ -304,24 +177,23 @@
       "raceDateTimeISO": "2026-11-08T18:00:00+01:00",
       "sessions": [
         {"day":"VEN","date":"6","name":"Prove Libere 1","time":"15:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"VEN","date":"6","name":"Prove Libere 2","time":"19:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"7","name":"Prove Libere 3","time":"15:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"7","name":"Qualifiche","time":"19:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
+        {"day":"VEN","date":"6","name":"Prove Libere 2","time":"19:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
+        {"day":"SAB","date":"7","name":"Prove Libere 3","time":"15:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
+        {"day":"SAB","date":"7","name":"Qualifiche","time":"19:00","channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8","type":"free"}]},
         {"day":"DOM","date":"8","name":"Gara","time":"18:00","isRace":true,"channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (differita)","type":"free"}]}
       ]
     },
     {
-      "id": "las-vegas",
+      "id": "las_vegas",
       "name": "GP Las Vegas",
       "track": "Las Vegas Strip Circuit",
       "dates": "19–21 Novembre",
       "raceDateTimeISO": "2026-11-21T05:00:00+01:00",
       "sessions": [
-        {"day":"VEN","date":"19","name":"Prove Libere 1","time":"01:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"VEN","date":"19","name":"Prove Libere 2","time":"05:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"20","name":"Prove Libere 3","time":"01:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"20","name":"Qualifiche","time":"05:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"DOM","date":"21","name":"Gara","time":"05:00","isRace":true,"channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (differita)","type":"free"}]}
+        {"day":"GIO","date":"19","name":"Prove Libere 1","time":"03:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
+        {"day":"VEN","date":"20","name":"Prove Libere 2","time":"03:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
+        {"day":"SAB","date":"21","name":"Qualifiche","time":"01:00","channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8","type":"free"}]},
+        {"day":"DOM","date":"22","name":"Gara","time":"05:00","isRace":true,"channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (differita)","type":"free"}]}
       ]
     },
     {
@@ -332,23 +204,23 @@
       "raceDateTimeISO": "2026-11-29T17:00:00+01:00",
       "sessions": [
         {"day":"VEN","date":"27","name":"Prove Libere 1","time":"14:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"VEN","date":"27","name":"Prove Libere 2","time":"18:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"28","name":"Prove Libere 3","time":"15:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"28","name":"Qualifiche","time":"19:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
+        {"day":"VEN","date":"27","name":"Prove Libere 2","time":"18:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
+        {"day":"SAB","date":"28","name":"Prove Libere 3","time":"14:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
+        {"day":"SAB","date":"28","name":"Qualifiche","time":"18:00","channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8","type":"free"}]},
         {"day":"DOM","date":"29","name":"Gara","time":"17:00","isRace":true,"channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (differita)","type":"free"}]}
       ]
     },
     {
-      "id": "abu-dhabi",
+      "id": "abu_dhabi",
       "name": "GP Abu Dhabi",
       "track": "Yas Marina Circuit",
       "dates": "4–6 Dicembre",
       "raceDateTimeISO": "2026-12-06T14:00:00+01:00",
       "sessions": [
-        {"day":"VEN","date":"4","name":"Prove Libere 1","time":"10:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"VEN","date":"4","name":"Prove Libere 2","time":"14:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"5","name":"Prove Libere 3","time":"11:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
-        {"day":"SAB","date":"5","name":"Qualifiche","time":"15:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
+        {"day":"VEN","date":"4","name":"Prove Libere 1","time":"11:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
+        {"day":"VEN","date":"4","name":"Prove Libere 2","time":"15:00","channels":[{"name":"Sky Sport F1","type":"pay"}]},
+        {"day":"SAB","date":"5","name":"Prove Libere 3","time":"12:30","channels":[{"name":"Sky Sport F1","type":"pay"}]},
+        {"day":"SAB","date":"5","name":"Qualifiche","time":"15:00","channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8","type":"free"}]},
         {"day":"DOM","date":"6","name":"Gara","time":"14:00","isRace":true,"channels":[{"name":"Sky Sport F1 / Uno","type":"pay"},{"name":"TV8 (differita)","type":"free"}]}
       ]
     }
@@ -357,47 +229,62 @@
     {"round":1,"flag":"🇦🇺","name":"GP Australia","date":"6-8 Mar","done":true},
     {"round":2,"flag":"🇨🇳","name":"GP Cina","date":"13-15 Mar","done":true,"sprint":true},
     {"round":3,"flag":"🇯🇵","name":"GP Giappone","date":"27-29 Mar","done":true},
-    {"round":4,"flag":"🇧🇭","name":"GP Bahrain","date":"10-12 Apr","done":true},
-    {"round":5,"flag":"🇸🇦","name":"GP Arabia Saudita","date":"17-19 Apr","done":true},
-    {"round":6,"flag":"🇺🇸","name":"GP Miami","date":"1-3 Mag","done":true,"sprint":true},
-    {"round":7,"flag":"🇨🇦","name":"GP Canada","date":"22-24 Mag","done":true,"sprint":true},
-    {"round":8,"flag":"🇲🇨","name":"GP Monaco","date":"5-7 Giu","done":true},
-    {"round":9,"flag":"🇪🇸","name":"GP Spagna","date":"12-14 Giu","next":true},
-    {"round":10,"flag":"🇦🇹","name":"GP Austria","date":"26-28 Giu"},
-    {"round":11,"flag":"🇬🇧","name":"GP Gran Bretagna","date":"3-5 Lug","sprint":true},
-    {"round":12,"flag":"🇧🇪","name":"GP Belgio","date":"17-19 Lug"},
-    {"round":13,"flag":"🇭🇺","name":"GP Ungheria","date":"24-26 Lug"},
-    {"round":14,"flag":"🇳🇱","name":"GP Olanda","date":"21-23 Ago","sprint":true},
-    {"round":15,"flag":"🇮🇹","name":"GP Italia (Monza)","date":"4-6 Set"},
-    {"round":16,"flag":"🇪🇸","name":"GP Spagna (Madrid)","date":"11-13 Set"},
-    {"round":17,"flag":"🇦🇿","name":"GP Azerbaijan","date":"24-26 Set"},
-    {"round":18,"flag":"🇸🇬","name":"GP Singapore","date":"9-11 Ott","sprint":true},
-    {"round":19,"flag":"🇺🇸","name":"GP USA (Austin)","date":"23-25 Ott"},
-    {"round":20,"flag":"🇲🇽","name":"GP Messico","date":"31 Ott-2 Nov"},
-    {"round":21,"flag":"🇧🇷","name":"GP Brasile","date":"6-8 Nov"},
-    {"round":22,"flag":"🇺🇸","name":"GP Las Vegas","date":"19-21 Nov"},
-    {"round":23,"flag":"🇶🇦","name":"GP Qatar","date":"27-29 Nov"},
-    {"round":24,"flag":"🇦🇪","name":"GP Abu Dhabi","date":"4-6 Dic"}
+    {"round":4,"flag":"🇺🇸","name":"GP Miami","date":"1-3 Mag","done":true,"sprint":true},
+    {"round":5,"flag":"🇨🇦","name":"GP Canada","date":"22-24 Mag","done":true,"sprint":true},
+    {"round":6,"flag":"🇲🇨","name":"GP Monaco","date":"5-7 Giu","done":true},
+    {"round":7,"flag":"🇪🇸","name":"GP Spagna","date":"12-14 Giu","next":true},
+    {"round":8,"flag":"🇦🇹","name":"GP Austria","date":"26-28 Giu"},
+    {"round":9,"flag":"🇬🇧","name":"GP Gran Bretagna","date":"3-5 Lug","sprint":true},
+    {"round":10,"flag":"🇧🇪","name":"GP Belgio","date":"17-19 Lug"},
+    {"round":11,"flag":"🇭🇺","name":"GP Ungheria","date":"24-26 Lug"},
+    {"round":12,"flag":"🇳🇱","name":"GP Olanda","date":"21-23 Ago","sprint":true},
+    {"round":13,"flag":"🇮🇹","name":"GP Italia (Monza)","date":"4-6 Set"},
+    {"round":14,"flag":"🇪🇸","name":"GP Madrid","date":"11-13 Set"},
+    {"round":15,"flag":"🇦🇿","name":"GP Azerbaijan","date":"24-26 Set"},
+    {"round":16,"flag":"🇸🇬","name":"GP Singapore","date":"9-11 Ott","sprint":true},
+    {"round":17,"flag":"🇺🇸","name":"GP USA (Austin)","date":"23-25 Ott"},
+    {"round":18,"flag":"🇲🇽","name":"GP Messico","date":"30 Ott-1 Nov"},
+    {"round":19,"flag":"🇧🇷","name":"GP Brasile","date":"6-8 Nov"},
+    {"round":20,"flag":"🇺🇸","name":"GP Las Vegas","date":"19-21 Nov"},
+    {"round":21,"flag":"🇶🇦","name":"GP Qatar","date":"27-29 Nov"},
+    {"round":22,"flag":"🇦🇪","name":"GP Abu Dhabi","date":"4-6 Dic"}
   ],
   "standings": {
     "drivers": [
-      {"pos":1,"name":"Lando Norris","team":"McLaren","pts":423},
-      {"pos":2,"name":"Max Verstappen","team":"Red Bull","pts":421},
-      {"pos":3,"name":"Oscar Piastri","team":"McLaren","pts":410},
-      {"pos":4,"name":"George Russell","team":"Mercedes","pts":319},
-      {"pos":5,"name":"Charles Leclerc","team":"Ferrari","pts":242},
-      {"pos":6,"name":"Kimi Antonelli","team":"Mercedes","pts":198},
-      {"pos":7,"name":"Lewis Hamilton","team":"Ferrari","pts":156},
-      {"pos":8,"name":"Carlos Sainz","team":"Williams","pts":137},
-      {"pos":9,"name":"Fernando Alonso","team":"Aston Martin","pts":89},
-      {"pos":10,"name":"Yuki Tsunoda","team":"Red Bull","pts":72}
+      {"pos":1,"name":"Kimi Antonelli","team":"Mercedes","pts":156},
+      {"pos":2,"name":"Lewis Hamilton","team":"Ferrari","pts":90},
+      {"pos":3,"name":"George Russell","team":"Mercedes","pts":88},
+      {"pos":4,"name":"Charles Leclerc","team":"Ferrari","pts":75},
+      {"pos":5,"name":"Oscar Piastri","team":"McLaren","pts":60},
+      {"pos":6,"name":"Lando Norris","team":"McLaren","pts":58},
+      {"pos":7,"name":"Max Verstappen","team":"Red Bull","pts":43},
+      {"pos":8,"name":"Isack Hadjar","team":"Red Bull","pts":29},
+      {"pos":9,"name":"Liam Lawson","team":"Racing Bulls","pts":26},
+      {"pos":10,"name":"Pierre Gasly","team":"Alpine","pts":26},
+      {"pos":11,"name":"Oliver Bearman","team":"Haas","pts":18},
+      {"pos":12,"name":"Franco Colapinto","team":"Alpine","pts":15},
+      {"pos":13,"name":"Arvid Lindblad","team":"Racing Bulls","pts":13},
+      {"pos":14,"name":"Carlos Sainz","team":"Williams","pts":6},
+      {"pos":15,"name":"Alexander Albon","team":"Williams","pts":5},
+      {"pos":16,"name":"Esteban Ocon","team":"Haas","pts":3},
+      {"pos":17,"name":"Gabriel Bortoleto","team":"Audi","pts":2},
+      {"pos":18,"name":"Fernando Alonso","team":"Aston Martin","pts":1},
+      {"pos":19,"name":"Nico Hulkenberg","team":"Audi","pts":0},
+      {"pos":20,"name":"Valtteri Bottas","team":"Cadillac","pts":0},
+      {"pos":21,"name":"Sergio Perez","team":"Cadillac","pts":0},
+      {"pos":22,"name":"Lance Stroll","team":"Aston Martin","pts":0}
     ],
     "constructors": [
-      {"pos":1,"name":"McLaren","team":"Norris / Piastri","pts":833},
-      {"pos":2,"name":"Mercedes","team":"Russell / Antonelli","pts":517},
-      {"pos":3,"name":"Red Bull","team":"Verstappen / Tsunoda","pts":493},
-      {"pos":4,"name":"Ferrari","team":"Leclerc / Hamilton","pts":398},
-      {"pos":5,"name":"Williams","team":"Sainz / Colapinto","pts":137}
+      {"pos":1,"name":"Mercedes","team":"Antonelli / Russell","pts":244},
+      {"pos":2,"name":"Ferrari","team":"Hamilton / Leclerc","pts":165},
+      {"pos":3,"name":"McLaren","team":"Norris / Piastri","pts":118},
+      {"pos":4,"name":"Red Bull","team":"Verstappen / Hadjar","pts":72},
+      {"pos":5,"name":"Alpine","team":"Gasly / Colapinto","pts":41},
+      {"pos":6,"name":"Racing Bulls","team":"Lawson / Lindblad","pts":39},
+      {"pos":7,"name":"Haas","team":"Bearman / Ocon","pts":21},
+      {"pos":8,"name":"Williams","team":"Sainz / Albon","pts":11},
+      {"pos":9,"name":"Audi","team":"Hulkenberg / Bortoleto","pts":2},
+      {"pos":10,"name":"Aston Martin","team":"Alonso / Stroll","pts":1}
     ]
   }
 }
