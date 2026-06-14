@@ -1,4 +1,4 @@
-name: Aggiorna classifiche F1
+name: Aggiorna dati F1
 
 on:
   schedule:
@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 jobs:
-  update-standings:
+  update-data:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -24,14 +24,17 @@ jobs:
       - name: Aggiorna races-data.json con le classifiche correnti
         run: node scripts/update-standings.js
 
+      - name: Aggiorna races-data.json con il calendario stagione
+        run: node scripts/update-season.js
+
       - name: Commit e push (solo se qualcosa è cambiato)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add races-data.json
           if git diff --cached --quiet; then
-            echo "Nessuna modifica alle classifiche, niente da commitare."
+            echo "Nessuna modifica, niente da commitare."
           else
-            git commit -m "Aggiorna classifiche F1 [auto]"
+            git commit -m "Aggiorna classifiche e calendario F1 [auto]"
             git push
           fi
