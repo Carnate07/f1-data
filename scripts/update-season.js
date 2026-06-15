@@ -115,9 +115,10 @@ async function main() {
     throw new Error('Calendario non disponibile o incompleto: niente da aggiornare.');
   }
 
-  // Data di oggi in UTC, formato YYYY-MM-DD (confrontabile direttamente
-  // con le date ISO restituite dall'API)
-  const todayStr = new Date().toISOString().slice(0, 10);
+  const now = new Date();
+  // Margine dopo l'orario di partenza della gara: prima di questo
+  // istante la gara è considerata "in corso/da disputare", non "passata"
+  const RACE_DURATION_BUFFER_MS = 3 * 60 * 60 * 1000; // 3 ore
 
   let nextAssigned = false;
   const season = races.map(race => {
@@ -131,7 +132,14 @@ async function main() {
 
     if (race.Sprint) entry.sprint = true;
 
-    if (race.date < todayStr) {
+    // Orario di partenza della gara (UTC). Se manca, usiamo fine giornata
+    // come stima prudente.
+    const raceStart = race.time
+      ? new Date(`${race.date}T${race.time}`)
+      : new Date(`${race.date}T23:59:59Z`);
+    const raceConsideredOver = new Date(raceStart.getTime() + RACE_DURATION_BUFFER_MS);
+
+    if (raceConsideredOver <= now) {
       entry.done = true;
     } else if (!nextAssigned) {
       entry.next = true;
