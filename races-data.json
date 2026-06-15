@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-14 19:38 UTC",
+  "lastUpdated": "2026-06-15 16:40 UTC",
   "races": [
     {
       "id": "spagna",
@@ -1313,13 +1313,14 @@
       "flag": "🇪🇸",
       "name": "GP Spagna",
       "date": "12-14 Giu",
-      "next": true
+      "done": true
     },
     {
       "round": 8,
       "flag": "🇦🇹",
       "name": "GP Austria",
-      "date": "26-28 Giu"
+      "date": "26-28 Giu",
+      "next": true
     },
     {
       "round": 9,
@@ -1469,25 +1470,25 @@
         "pos": 10,
         "name": "Liam Lawson",
         "team": "RB F1 Team",
-        "pts": 26
+        "pts": 28
       },
       {
         "pos": 11,
-        "name": "Franco Colapinto",
-        "team": "Alpine F1 Team",
-        "pts": 19
-      },
-      {
-        "pos": 12,
         "name": "Oliver Bearman",
         "team": "Haas F1 Team",
         "pts": 18
       },
       {
+        "pos": 12,
+        "name": "Franco Colapinto",
+        "team": "Alpine F1 Team",
+        "pts": 16
+      },
+      {
         "pos": 13,
         "name": "Arvid Lindblad",
         "team": "RB F1 Team",
-        "pts": 12
+        "pts": 13
       },
       {
         "pos": 14,
@@ -1573,13 +1574,13 @@
         "pos": 5,
         "name": "Alpine F1 Team",
         "team": "Gasly / Colapinto",
-        "pts": 60
+        "pts": 57
       },
       {
         "pos": 6,
         "name": "RB F1 Team",
         "team": "Lawson / Lindblad",
-        "pts": 38
+        "pts": 41
       },
       {
         "pos": 7,
