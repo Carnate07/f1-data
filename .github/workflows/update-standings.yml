@@ -1,40 +1,37 @@
-name: Aggiorna dati F1
+name: Aggiorna races-data.json
 
 on:
+  # Ogni lunedì alle 06:00 UTC (dopo il GP domenicale)
   schedule:
-    # Ogni giorno alle 05:00 UTC (copre gare/sprint del weekend)
-    - cron: '0 5 * * *'
-  workflow_dispatch: {}   # permette di avviarlo manualmente da GitHub
-
-permissions:
-  contents: write
+    - cron: '0 6 * * 1'
+  # Permette di avviarlo manualmente dal tab Actions su GitHub
+  workflow_dispatch:
 
 jobs:
-  update-data:
+  update:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
-      - name: Checkout repository
+      - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
-          node-version: '20'
+          python-version: '3.11'
 
-      - name: Aggiorna races-data.json con le classifiche correnti
-        run: node scripts/update-standings.js
+      - name: Installa dipendenze
+        run: pip install requests pytz
 
-      - name: Aggiorna races-data.json con il calendario stagione
-        run: node scripts/update-season.js
+      - name: Esegui script aggiornamento
+        run: python update_races_data.py
 
-      - name: Commit e push (solo se qualcosa è cambiato)
+      - name: Commit e push se ci sono modifiche
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add races-data.json
-          if git diff --cached --quiet; then
-            echo "Nessuna modifica, niente da commitare."
-          else
-            git commit -m "Aggiorna classifiche e calendario F1 [auto]"
-            git push
-          fi
+          git diff --cached --quiet || git commit -m "Auto-update races-data.json [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          git push
