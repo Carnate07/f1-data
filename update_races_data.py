@@ -92,30 +92,138 @@ def fetch_constructor_standings():
         })
     return standings
 
-# ── 3. Segna GP come "done" nel calendario ───────────────────────────────────
-def mark_done_races(season):
+# ── 3. Aggiorna sessioni e date dei GP ──────────────────────────────────────
+SESSION_NAME_MAP = {
+    "Practice 1":        "Prove Libere 1",
+    "Practice 2":        "Prove Libere 2",
+    "Practice 3":        "Prove Libere 3",
+    "Qualifying":        "Qualifiche",
+    "Sprint":            "Sprint Race",
+    "Sprint Qualifying": "Qualifiche Sprint",
+    "Race":              "Gara",
+}
+DAY_IT = {0:"LUN",1:"MAR",2:"MER",3:"GIO",4:"VEN",5:"SAB",6:"DOM"}
+MONTHS_IT = ["","Gen","Feb","Mar","Apr","Mag","Giu","Lug","Ago","Set","Ott","Nov","Dic"]
+
+def default_channels(session_type):
+    """Canali TV italiani di default per tipo sessione."""
+    if session_type in ("Race", "Sprint"):
+        return [
+            {"name": "Sky Sport F1 / Uno", "type": "pay"},
+            {"name": "TV8 (differita)",     "type": "free"}
+        ]
+    if session_type in ("Qualifying", "Sprint Qualifying"):
+        return [
+            {"name": "Sky Sport F1 / Uno", "type": "pay"},
+            {"name": "TV8 (differita)",     "type": "free"}
+        ]
+    return [{"name": "Sky Sport F1", "type": "pay"}]
+
+def fetch_races(existing_races):
     """
-    Confronta la data attuale con le date nel calendario e segna done=True
-    per i GP già corsi. Non dipende da OpenF1, basta la data di sistema.
+    Scarica meeting e sessioni 2026 da OpenF1.
+    Mantiene i canali TV già presenti nel JSON esistente.
     """
-    now = datetime.now(timezone.utc)
-    for r in season:
-        # Cerca la data ISO nelle races se disponibile
-        # (il campo 'done' viene gestito dinamicamente nell'app, ma lo aggiorniamo
-        #  anche qui per coerenza)
-        r.pop("next", None)  # rimuove il flag 'next' statico, l'app lo calcola
-    return season
+    meetings = get("meetings", {"year": YEAR})
+    if not meetings:
+        print("  Nessun meeting trovato su OpenF1")
+        return existing_races
+
+    # Indice rapido per id
+    existing_map = {r["id"]: r for r in existing_races}
+    updated = []
+
+    for m in sorted(meetings, key=lambda x: x.get("date_start", "")):
+        country = m.get("country_name", "")
+        gp_id   = COUNTRY_TO_ID.get(country)
+        if not gp_id:
+            continue  # GP già corso prima del calendario futuro — salta
+
+        # Sessioni del meeting ordinate per data
+        sessions_raw = get("sessions", {"meeting_key": m["meeting_key"], "year": YEAR})
+        sessions_raw = sorted(sessions_raw, key=lambda s: s.get("date_start", ""))
+
+        # Data ISO della gara
+        race_session = next((s for s in sessions_raw if s.get("session_type") == "Race"), None)
+        race_iso     = race_session["date_start"] if race_session else m.get("date_start", "")
+
+        # Stringa date weekend (es. "27–29 Giu")
+        if sessions_raw:
+            d0 = datetime.fromisoformat(sessions_raw[0]["date_start"])
+            d1 = datetime.fromisoformat(sessions_raw[-1]["date_start"])
+            if d0.month == d1.month:
+                dates_str = f"{d0.day}–{d1.day} {MONTHS_IT[d0.month]}"
+            else:
+                dates_str = f"{d0.day} {MONTHS_IT[d0.month]}–{d1.day} {MONTHS_IT[d1.month]}"
+        else:
+            dates_str = existing_map.get(gp_id, {}).get("dates", "")
+
+        # Indice sessioni esistenti per nome → per preservare i canali TV
+        existing_sessions_map = {
+            s["name"]: s
+            for s in existing_map.get(gp_id, {}).get("sessions", [])
+        }
+
+        new_sessions = []
+        for s in sessions_raw:
+            stype = s.get("session_type", "")
+            sname = SESSION_NAME_MAP.get(stype, stype)
+            dt    = datetime.fromisoformat(s["date_start"])
+            sess  = {
+                "day":      DAY_IT[dt.weekday()],
+                "date":     str(dt.day),
+                "name":     sname,
+                "time":     dt.strftime("%H:%M"),
+                # Usa canali TV già configurati, altrimenti default
+                "channels": existing_sessions_map.get(sname, {}).get("channels")
+                            or default_channels(stype),
+            }
+            if stype == "Race":
+                sess["isRace"] = True
+            new_sessions.append(sess)
+
+        gp = existing_map.get(gp_id, {}).copy()
+        gp.update({
+            "id":              gp_id,
+            "name":            m.get("meeting_name", gp.get("name", "")),
+            "track":           m.get("circuit_short_name", gp.get("track", "")),
+            "dates":           dates_str,
+            "raceDateTimeISO": race_iso,
+            "sessions":        new_sessions if new_sessions else gp.get("sessions", []),
+        })
+        updated.append(gp)
+        print(f"  ✅ {gp['name']} — {len(new_sessions)} sessioni")
+
+    # Mantieni GP non ancora su OpenF1 (senza meeting_key)
+    ids_updated = {r["id"] for r in updated}
+    for r in existing_races:
+        if r["id"] not in ids_updated:
+            updated.append(r)
+
+    updated.sort(key=lambda r: r.get("raceDateTimeISO", ""))
+    return updated
 
 # ── Main ─────────────────────────────────────────────────────────────────────
 def main():
-    # Carica il JSON esistente (mantiene gli orari TV hardcoded)
     if JSON_PATH.exists():
         with open(JSON_PATH, encoding="utf-8") as f:
             data = json.load(f)
         print("✅ JSON esistente caricato")
     else:
-        print("⚠️  races-data.json non trovato, verrà creato da zero (senza orari TV)")
+        print("⚠️  races-data.json non trovato, verrà creato da zero")
         data = {"races": [], "season": [], "standings": {"drivers": [], "constructors": []}}
+
+    # Sessioni e date GP
+    print("📡 Scarico sessioni GP...")
+    try:
+        races = fetch_races(data.get("races", []))
+        if races:
+            data["races"] = races
+            print(f"  ✅ {len(races)} GP aggiornati")
+        else:
+            print("  ⚠️  Nessun dato GP, races invariate")
+    except Exception as e:
+        print(f"  ❌ Errore races: {e}")
 
     # Classifiche piloti
     print("📡 Scarico classifiche piloti...")
@@ -141,10 +249,9 @@ def main():
     except Exception as e:
         print(f"  ❌ Errore costruttori: {e}")
 
-    # Aggiorna timestamp
+    # Timestamp
     data["lastUpdated"] = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
-    # Salva
     with open(JSON_PATH, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     print(f"\n✅ races-data.json aggiornato — {data['lastUpdated']}")
