@@ -105,18 +105,69 @@ SESSION_NAME_MAP = {
 DAY_IT = {0:"LUN",1:"MAR",2:"MER",3:"GIO",4:"VEN",5:"SAB",6:"DOM"}
 MONTHS_IT = ["","Gen","Feb","Mar","Apr","Mag","Giu","Lug","Ago","Set","Ott","Nov","Dic"]
 
-def default_channels(session_type):
-    """Canali TV italiani di default per tipo sessione."""
-    if session_type in ("Race", "Sprint"):
+# GP con TV8 in DIRETTA (non differita)
+TV8_DIRETTA = {"italia", "abu-dhabi"}
+
+# Orari approssimativi differita TV8 per tipo sessione
+# (offset in ore rispetto all'orario della sessione)
+TV8_DIFFERITA_OFFSET = {
+    "Qualifying":        3,   # qualifiche → differita ~3h dopo
+    "Sprint Qualifying": 2,
+    "Sprint":            2,
+    "Race":              3,
+}
+
+def default_channels(session_type, gp_id="", session_time=""):
+    """
+    Canali TV italiani intelligenti per tipo sessione.
+    - Monza e Abu Dhabi: TV8 in diretta per la gara
+    - Sprint weekend: TV8 anche per Sprint e Qualifiche Sprint
+    - Differita: orario approssimativo calcolato
+    """
+    is_diretta_gp = gp_id in TV8_DIRETTA
+
+    # Calcola orario differita TV8
+    def differita_time(stype):
+        if not session_time:
+            return "differita"
+        try:
+            h, m = map(int, session_time.split(":"))
+            offset = TV8_DIFFERITA_OFFSET.get(stype, 3)
+            total = (h + offset) % 24
+            return f"differita {total:02d}:00"
+        except Exception:
+            return "differita"
+
+    if session_type == "Race":
+        if is_diretta_gp:
+            return [
+                {"name": "Sky Sport F1 / Uno", "type": "pay"},
+                {"name": "TV8 DIRETTA",         "type": "free"}
+            ]
         return [
-            {"name": "Sky Sport F1 / Uno", "type": "pay"},
-            {"name": "TV8 (differita)",     "type": "free"}
+            {"name": "Sky Sport F1 / Uno",                       "type": "pay"},
+            {"name": f"TV8 ({differita_time('Race')})",           "type": "free"}
         ]
-    if session_type in ("Qualifying", "Sprint Qualifying"):
+
+    if session_type == "Qualifying":
         return [
-            {"name": "Sky Sport F1 / Uno", "type": "pay"},
-            {"name": "TV8 (differita)",     "type": "free"}
+            {"name": "Sky Sport F1 / Uno",                            "type": "pay"},
+            {"name": f"TV8 ({differita_time('Qualifying')})",          "type": "free"}
         ]
+
+    if session_type == "Sprint":
+        return [
+            {"name": "Sky Sport F1 / Uno",                       "type": "pay"},
+            {"name": f"TV8 ({differita_time('Sprint')})",         "type": "free"}
+        ]
+
+    if session_type == "Sprint Qualifying":
+        return [
+            {"name": "Sky Sport F1 / Uno",                                "type": "pay"},
+            {"name": f"TV8 ({differita_time('Sprint Qualifying')})",       "type": "free"}
+        ]
+
+    # Prove libere → solo Sky
     return [{"name": "Sky Sport F1", "type": "pay"}]
 
 def fetch_races(existing_races):
@@ -176,7 +227,7 @@ def fetch_races(existing_races):
                 "time":     dt.strftime("%H:%M"),
                 # Usa canali TV già configurati, altrimenti default
                 "channels": existing_sessions_map.get(sname, {}).get("channels")
-                            or default_channels(stype),
+                            or default_channels(stype, gp_id, dt.strftime("%H:%M")),
             }
             if stype == "Race":
                 sess["isRace"] = True
