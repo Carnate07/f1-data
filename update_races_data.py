@@ -44,7 +44,7 @@ def fetch_driver_standings():
     endpoint: /championship_drivers
     """
     # Trova le sessioni Race del 2026
-    sessions = get("sessions", {"year": YEAR, "session_type": "Race"})
+    sessions = get("sessions", {"year": YEAR, "session_name": "Race"})
     if not sessions:
         print("  Nessuna sessione Race trovata per il 2026")
         return None
@@ -71,7 +71,7 @@ def fetch_driver_standings():
 
 # ── 2. Classifiche costruttori ───────────────────────────────────────────────
 def fetch_constructor_standings():
-    sessions = get("sessions", {"year": YEAR, "session_type": "Race"})
+    sessions = get("sessions", {"year": YEAR, "session_name": "Race"})
     if not sessions:
         return None
 
@@ -195,7 +195,7 @@ def fetch_races(existing_races):
         sessions_raw = sorted(sessions_raw, key=lambda s: s.get("date_start", ""))
 
         # Data ISO della gara
-        race_session = next((s for s in sessions_raw if s.get("session_type") == "Race"), None)
+        race_session = next((s for s in sessions_raw if s.get("session_name") == "Race"), None)
         race_iso     = race_session["date_start"] if race_session else m.get("date_start", "")
 
         # Stringa date weekend (es. "27–29 Giu")
@@ -217,7 +217,7 @@ def fetch_races(existing_races):
 
         new_sessions = []
         for s in sessions_raw:
-            stype = s.get("session_type", "")
+            stype = s.get("session_name", "")
             sname = SESSION_NAME_MAP.get(stype, stype)
             dt    = datetime.fromisoformat(s["date_start"])
             sess  = {
