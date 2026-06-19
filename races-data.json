@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-19 16:34 UTC",
+  "lastUpdated": "2026-06-19 22:09 UTC",
   "races": [
     {
       "id": "usa",
@@ -167,7 +167,7 @@
     },
     {
       "id": "austria",
-      "name": "Austrian Grand Prix",
+      "name": "GP Austria",
       "track": "Spielberg",
       "dates": "26–28 Giu",
       "raceDateTimeISO": "2026-06-28T13:00:00+00:00",
@@ -245,7 +245,7 @@
     },
     {
       "id": "gran-bretagna",
-      "name": "British Grand Prix",
+      "name": "GP Gran Bretagna",
       "track": "Silverstone",
       "dates": "3–5 Lug",
       "raceDateTimeISO": "2026-07-05T14:00:00+00:00",
@@ -417,7 +417,7 @@
     },
     {
       "id": "belgio",
-      "name": "Belgian Grand Prix",
+      "name": "GP Belgio",
       "track": "Spa-Francorchamps",
       "dates": "17–19 Lug",
       "raceDateTimeISO": "2026-07-19T13:00:00+00:00",
@@ -495,7 +495,7 @@
     },
     {
       "id": "ungheria",
-      "name": "Hungarian Grand Prix",
+      "name": "GP Ungheria",
       "track": "Hungaroring",
       "dates": "24–26 Lug",
       "raceDateTimeISO": "2026-07-26T13:00:00+00:00",
@@ -573,7 +573,7 @@
     },
     {
       "id": "olanda",
-      "name": "Dutch Grand Prix",
+      "name": "GP Olanda",
       "track": "Zandvoort",
       "dates": "21–23 Ago",
       "raceDateTimeISO": "2026-08-23T13:00:00+00:00",
@@ -659,7 +659,7 @@
     },
     {
       "id": "italia",
-      "name": "Italian Grand Prix",
+      "name": "GP Italia",
       "track": "Monza",
       "dates": "4–6 Set",
       "raceDateTimeISO": "2026-09-06T13:00:00+00:00",
@@ -815,7 +815,7 @@
     },
     {
       "id": "azerbaijan",
-      "name": "Azerbaijan Grand Prix",
+      "name": "GP Azerbaijan",
       "track": "Baku",
       "dates": "24–26 Set",
       "raceDateTimeISO": "2026-09-26T11:00:00+00:00",
@@ -893,7 +893,7 @@
     },
     {
       "id": "singapore",
-      "name": "Singapore Grand Prix",
+      "name": "GP Singapore",
       "track": "Singapore",
       "dates": "9–11 Ott",
       "raceDateTimeISO": "2026-10-11T12:00:00+00:00",
@@ -1057,7 +1057,7 @@
     },
     {
       "id": "messico",
-      "name": "Mexico City Grand Prix",
+      "name": "GP Messico",
       "track": "Mexico City",
       "dates": "30 Ott–1 Nov",
       "raceDateTimeISO": "2026-11-01T20:00:00+00:00",
@@ -1135,7 +1135,7 @@
     },
     {
       "id": "brasile",
-      "name": "São Paulo Grand Prix",
+      "name": "GP Brasile",
       "track": "Interlagos",
       "dates": "6–8 Nov",
       "raceDateTimeISO": "2026-11-08T17:00:00+00:00",
@@ -1357,7 +1357,7 @@
     },
     {
       "id": "qatar",
-      "name": "Qatar Grand Prix",
+      "name": "GP Qatar",
       "track": "Lusail",
       "dates": "27–29 Nov",
       "raceDateTimeISO": "2026-11-29T16:00:00+00:00",
