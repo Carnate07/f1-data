@@ -16,6 +16,8 @@ YEAR = 2026
 JSON_PATH = Path("races-data.json")
 
 # ── Mappa nomi paese OpenF1 → id GP usato nel tuo JSON ──────────────────────
+# NB: gli Stati Uniti hanno 3 GP (Miami, Austin, Las Vegas) quindi il country
+# da solo non basta: serve anche il nome del circuito per distinguerli.
 COUNTRY_TO_ID = {
     "Austria":        "austria",
     "United Kingdom": "gran-bretagna",
@@ -25,12 +27,44 @@ COUNTRY_TO_ID = {
     "Italy":          "italia",
     "Azerbaijan":     "azerbaijan",
     "Singapore":      "singapore",
-    "United States":  "usa",
     "Mexico":         "messico",
     "Brazil":         "brasile",
     "Qatar":          "qatar",
     "Abu Dhabi":      "abu-dhabi",
 }
+
+# Per i meeting USA (3 GP diversi) si usa il nome del circuito
+US_CIRCUIT_TO_ID = {
+    "Miami International Autodrome": "miami",
+    "Circuit of the Americas":       "usa",
+    "Las Vegas Strip Circuit":       "las-vegas",
+}
+
+# Nomi italiani ufficiali per ogni GP, usati al posto del meeting_name inglese
+# restituito da OpenF1 (es. "Dutch Grand Prix" → "GP Olanda")
+ITALIAN_NAMES = {
+    "austria":       "GP Austria",
+    "gran-bretagna": "GP Gran Bretagna",
+    "belgio":        "GP Belgio",
+    "ungheria":      "GP Ungheria",
+    "olanda":        "GP Olanda",
+    "italia":        "GP Italia",
+    "azerbaijan":    "GP Azerbaijan",
+    "singapore":     "GP Singapore",
+    "miami":         "GP Miami",
+    "usa":           "GP USA",
+    "messico":       "GP Messico",
+    "brasile":       "GP Brasile",
+    "las-vegas":     "GP Las Vegas",
+    "qatar":         "GP Qatar",
+    "abu-dhabi":     "GP Abu Dhabi",
+}
+
+def resolve_gp_id(country, circuit_short_name):
+    """Determina l'id del GP, gestendo il caso speciale degli USA."""
+    if country == "United States":
+        return US_CIRCUIT_TO_ID.get(circuit_short_name)
+    return COUNTRY_TO_ID.get(country)
 
 def get(endpoint, params=None):
     r = requests.get(f"{BASE}/{endpoint}", params=params, timeout=20)
@@ -186,9 +220,10 @@ def fetch_races(existing_races):
 
     for m in sorted(meetings, key=lambda x: x.get("date_start", "")):
         country = m.get("country_name", "")
-        gp_id   = COUNTRY_TO_ID.get(country)
+        circuit = m.get("circuit_short_name", "")
+        gp_id   = resolve_gp_id(country, circuit)
         if not gp_id:
-            continue  # GP già corso prima del calendario futuro — salta
+            continue  # GP non riconosciuto o già corso — salta
 
         # Sessioni del meeting ordinate per data
         sessions_raw = get("sessions", {"meeting_key": m["meeting_key"], "year": YEAR})
@@ -236,7 +271,7 @@ def fetch_races(existing_races):
         gp = existing_map.get(gp_id, {}).copy()
         gp.update({
             "id":              gp_id,
-            "name":            m.get("meeting_name", gp.get("name", "")),
+            "name":            ITALIAN_NAMES.get(gp_id, gp.get("name", m.get("meeting_name",""))),
             "track":           m.get("circuit_short_name", gp.get("track", "")),
             "dates":           dates_str,
             "raceDateTimeISO": race_iso,
