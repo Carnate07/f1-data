@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-06-20 12:00 UTC",
+  "lastUpdated": "2026-06-20 10:08 UTC",
   "races": [
     {
       "id": "australia",
       "name": "GP Australia",
-      "track": "Albert Park Circuit, Melbourne",
-      "dates": "6–8 Marzo",
-      "raceDateTimeISO": "2026-03-08T05:00:00+11:00",
+      "track": "Melbourne",
+      "dates": "6–8 Mar",
+      "raceDateTimeISO": "2026-03-08T04:00:00+00:00",
       "sessions": [
         {
           "day": "VEN",
           "date": "6",
           "name": "Prove Libere 1",
-          "time": "02:30",
+          "time": "01:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -24,7 +24,7 @@
           "day": "VEN",
           "date": "6",
           "name": "Prove Libere 2",
-          "time": "06:00",
+          "time": "05:00",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -36,7 +36,7 @@
           "day": "SAB",
           "date": "7",
           "name": "Prove Libere 3",
-          "time": "02:30",
+          "time": "01:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -48,7 +48,7 @@
           "day": "SAB",
           "date": "7",
           "name": "Qualifiche",
-          "time": "06:00",
+          "time": "05:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -64,8 +64,7 @@
           "day": "DOM",
           "date": "8",
           "name": "Gara",
-          "time": "05:00",
-          "isRace": true,
+          "time": "04:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -75,22 +74,23 @@
               "name": "TV8 (differita)",
               "type": "free"
             }
-          ]
+          ],
+          "isRace": true
         }
       ]
     },
     {
       "id": "cina",
       "name": "GP Cina",
-      "track": "Shanghai International Circuit",
-      "dates": "13–15 Marzo",
-      "raceDateTimeISO": "2026-03-15T07:00:00+01:00",
+      "track": "Shanghai",
+      "dates": "13–15 Mar",
+      "raceDateTimeISO": "2026-03-15T07:00:00+00:00",
       "sessions": [
         {
           "day": "VEN",
           "date": "13",
           "name": "Prove Libere 1",
-          "time": "04:30",
+          "time": "03:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -102,7 +102,7 @@
           "day": "VEN",
           "date": "13",
           "name": "Qualifiche Sprint",
-          "time": "08:30",
+          "time": "07:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -118,7 +118,7 @@
           "day": "SAB",
           "date": "14",
           "name": "Sprint Race",
-          "time": "04:00",
+          "time": "03:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -134,7 +134,7 @@
           "day": "SAB",
           "date": "14",
           "name": "Qualifiche",
-          "time": "08:00",
+          "time": "07:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -151,7 +151,6 @@
           "date": "15",
           "name": "Gara",
           "time": "07:00",
-          "isRace": true,
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -161,16 +160,17 @@
               "name": "TV8 (differita)",
               "type": "free"
             }
-          ]
+          ],
+          "isRace": true
         }
       ]
     },
     {
       "id": "giappone",
       "name": "GP Giappone",
-      "track": "Suzuka International Racing Course",
-      "dates": "27–29 Marzo",
-      "raceDateTimeISO": "2026-03-29T06:00:00+02:00",
+      "track": "Suzuka",
+      "dates": "27–29 Mar",
+      "raceDateTimeISO": "2026-03-29T05:00:00+00:00",
       "sessions": [
         {
           "day": "VEN",
@@ -200,7 +200,7 @@
           "day": "SAB",
           "date": "28",
           "name": "Prove Libere 3",
-          "time": "03:30",
+          "time": "02:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -212,7 +212,7 @@
           "day": "SAB",
           "date": "28",
           "name": "Qualifiche",
-          "time": "07:00",
+          "time": "06:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -228,8 +228,7 @@
           "day": "DOM",
           "date": "29",
           "name": "Gara",
-          "time": "06:00",
-          "isRace": true,
+          "time": "05:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -239,22 +238,23 @@
               "name": "TV8 (differita)",
               "type": "free"
             }
-          ]
+          ],
+          "isRace": true
         }
       ]
     },
     {
       "id": "miami",
       "name": "GP Miami",
-      "track": "Miami International Autodrome",
-      "dates": "1–3 Maggio",
-      "raceDateTimeISO": "2026-05-03T21:00:00+02:00",
+      "track": "Miami",
+      "dates": "1–3 Mag",
+      "raceDateTimeISO": "2026-05-03T17:00:00+00:00",
       "sessions": [
         {
           "day": "VEN",
           "date": "1",
           "name": "Prove Libere 1",
-          "time": "19:30",
+          "time": "16:00",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -266,7 +266,7 @@
           "day": "VEN",
           "date": "1",
           "name": "Qualifiche Sprint",
-          "time": "23:30",
+          "time": "20:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -282,7 +282,7 @@
           "day": "SAB",
           "date": "2",
           "name": "Sprint Race",
-          "time": "19:00",
+          "time": "16:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -298,7 +298,7 @@
           "day": "SAB",
           "date": "2",
           "name": "Qualifiche",
-          "time": "23:00",
+          "time": "20:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -314,8 +314,7 @@
           "day": "DOM",
           "date": "3",
           "name": "Gara",
-          "time": "21:00",
-          "isRace": true,
+          "time": "17:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -325,22 +324,23 @@
               "name": "TV8 (differita)",
               "type": "free"
             }
-          ]
+          ],
+          "isRace": true
         }
       ]
     },
     {
       "id": "canada",
       "name": "GP Canada",
-      "track": "Circuit Gilles Villeneuve, Montréal",
-      "dates": "22–24 Maggio",
-      "raceDateTimeISO": "2026-05-24T20:00:00+02:00",
+      "track": "Montreal",
+      "dates": "22–24 Mag",
+      "raceDateTimeISO": "2026-05-24T20:00:00+00:00",
       "sessions": [
         {
           "day": "VEN",
           "date": "22",
           "name": "Prove Libere 1",
-          "time": "18:30",
+          "time": "16:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -351,24 +351,32 @@
         {
           "day": "VEN",
           "date": "22",
-          "name": "Prove Libere 2",
-          "time": "22:00",
+          "name": "Qualifiche Sprint",
+          "time": "20:30",
           "channels": [
             {
-              "name": "Sky Sport F1",
+              "name": "Sky Sport F1 / Uno",
               "type": "pay"
+            },
+            {
+              "name": "TV8 (differita 22:00)",
+              "type": "free"
             }
           ]
         },
         {
           "day": "SAB",
           "date": "23",
-          "name": "Prove Libere 3",
-          "time": "18:30",
+          "name": "Sprint Race",
+          "time": "16:00",
           "channels": [
             {
-              "name": "Sky Sport F1",
+              "name": "Sky Sport F1 / Uno",
               "type": "pay"
+            },
+            {
+              "name": "TV8 (differita 18:00)",
+              "type": "free"
             }
           ]
         },
@@ -376,7 +384,7 @@
           "day": "SAB",
           "date": "23",
           "name": "Qualifiche",
-          "time": "22:00",
+          "time": "20:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -393,7 +401,6 @@
           "date": "24",
           "name": "Gara",
           "time": "20:00",
-          "isRace": true,
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -403,22 +410,23 @@
               "name": "TV8 (differita)",
               "type": "free"
             }
-          ]
+          ],
+          "isRace": true
         }
       ]
     },
     {
       "id": "monaco",
       "name": "GP Monaco",
-      "track": "Circuit de Monaco",
-      "dates": "5–7 Giugno",
-      "raceDateTimeISO": "2026-06-07T15:00:00+02:00",
+      "track": "Monte Carlo",
+      "dates": "5–7 Giu",
+      "raceDateTimeISO": "2026-06-07T13:00:00+00:00",
       "sessions": [
         {
           "day": "VEN",
           "date": "5",
           "name": "Prove Libere 1",
-          "time": "13:30",
+          "time": "11:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -430,7 +438,7 @@
           "day": "VEN",
           "date": "5",
           "name": "Prove Libere 2",
-          "time": "17:00",
+          "time": "15:00",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -442,7 +450,7 @@
           "day": "SAB",
           "date": "6",
           "name": "Prove Libere 3",
-          "time": "12:30",
+          "time": "10:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -454,7 +462,7 @@
           "day": "SAB",
           "date": "6",
           "name": "Qualifiche",
-          "time": "16:00",
+          "time": "14:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -470,8 +478,7 @@
           "day": "DOM",
           "date": "7",
           "name": "Gara",
-          "time": "15:00",
-          "isRace": true,
+          "time": "13:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -481,22 +488,23 @@
               "name": "TV8 (differita 18:00)",
               "type": "free"
             }
-          ]
+          ],
+          "isRace": true
         }
       ]
     },
     {
       "id": "catalunya",
       "name": "GP Catalunya",
-      "track": "Circuit de Barcelona-Catalunya",
-      "dates": "12–14 Giugno",
-      "raceDateTimeISO": "2026-06-14T15:00:00+02:00",
+      "track": "Catalunya",
+      "dates": "12–14 Giu",
+      "raceDateTimeISO": "2026-06-14T13:00:00+00:00",
       "sessions": [
         {
           "day": "VEN",
           "date": "12",
           "name": "Prove Libere 1",
-          "time": "13:30",
+          "time": "11:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -508,7 +516,7 @@
           "day": "VEN",
           "date": "12",
           "name": "Prove Libere 2",
-          "time": "17:00",
+          "time": "15:00",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -520,7 +528,7 @@
           "day": "SAB",
           "date": "13",
           "name": "Prove Libere 3",
-          "time": "12:30",
+          "time": "10:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -532,7 +540,7 @@
           "day": "SAB",
           "date": "13",
           "name": "Qualifiche",
-          "time": "16:00",
+          "time": "14:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -548,8 +556,7 @@
           "day": "DOM",
           "date": "14",
           "name": "Gara",
-          "time": "15:00",
-          "isRace": true,
+          "time": "13:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -559,22 +566,23 @@
               "name": "TV8 (differita 18:00)",
               "type": "free"
             }
-          ]
+          ],
+          "isRace": true
         }
       ]
     },
     {
       "id": "austria",
       "name": "GP Austria",
-      "track": "Red Bull Ring, Spielberg",
-      "dates": "26–28 Giugno",
-      "raceDateTimeISO": "2026-06-28T15:00:00+02:00",
+      "track": "Spielberg",
+      "dates": "26–28 Giu",
+      "raceDateTimeISO": "2026-06-28T13:00:00+00:00",
       "sessions": [
         {
           "day": "VEN",
           "date": "26",
           "name": "Prove Libere 1",
-          "time": "13:30",
+          "time": "11:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -586,7 +594,7 @@
           "day": "VEN",
           "date": "26",
           "name": "Prove Libere 2",
-          "time": "17:00",
+          "time": "15:00",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -598,7 +606,7 @@
           "day": "SAB",
           "date": "27",
           "name": "Prove Libere 3",
-          "time": "12:30",
+          "time": "10:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -610,7 +618,7 @@
           "day": "SAB",
           "date": "27",
           "name": "Qualifiche",
-          "time": "16:00",
+          "time": "14:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -626,8 +634,7 @@
           "day": "DOM",
           "date": "28",
           "name": "Gara",
-          "time": "15:00",
-          "isRace": true,
+          "time": "13:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -637,22 +644,23 @@
               "name": "TV8 (differita 18:00)",
               "type": "free"
             }
-          ]
+          ],
+          "isRace": true
         }
       ]
     },
     {
       "id": "gran-bretagna",
       "name": "GP Gran Bretagna",
-      "track": "Silverstone Circuit",
-      "dates": "3–5 Luglio",
-      "raceDateTimeISO": "2026-07-05T16:00:00+02:00",
+      "track": "Silverstone",
+      "dates": "3–5 Lug",
+      "raceDateTimeISO": "2026-07-05T14:00:00+00:00",
       "sessions": [
         {
           "day": "VEN",
           "date": "3",
           "name": "Prove Libere 1",
-          "time": "13:30",
+          "time": "11:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -664,7 +672,7 @@
           "day": "VEN",
           "date": "3",
           "name": "Qualifiche Sprint",
-          "time": "17:30",
+          "time": "15:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -680,7 +688,7 @@
           "day": "SAB",
           "date": "4",
           "name": "Sprint Race",
-          "time": "13:00",
+          "time": "11:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -696,7 +704,7 @@
           "day": "SAB",
           "date": "4",
           "name": "Qualifiche",
-          "time": "17:00",
+          "time": "15:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -712,8 +720,7 @@
           "day": "DOM",
           "date": "5",
           "name": "Gara",
-          "time": "16:00",
-          "isRace": true,
+          "time": "14:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -723,22 +730,23 @@
               "name": "TV8 (differita 18:30)",
               "type": "free"
             }
-          ]
+          ],
+          "isRace": true
         }
       ]
     },
     {
       "id": "belgio",
       "name": "GP Belgio",
-      "track": "Circuit de Spa-Francorchamps",
-      "dates": "17–19 Luglio",
-      "raceDateTimeISO": "2026-07-19T15:00:00+02:00",
+      "track": "Spa-Francorchamps",
+      "dates": "17–19 Lug",
+      "raceDateTimeISO": "2026-07-19T13:00:00+00:00",
       "sessions": [
         {
           "day": "VEN",
           "date": "17",
           "name": "Prove Libere 1",
-          "time": "13:30",
+          "time": "11:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -750,7 +758,7 @@
           "day": "VEN",
           "date": "17",
           "name": "Prove Libere 2",
-          "time": "17:00",
+          "time": "15:00",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -762,7 +770,7 @@
           "day": "SAB",
           "date": "18",
           "name": "Prove Libere 3",
-          "time": "12:30",
+          "time": "10:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -774,7 +782,7 @@
           "day": "SAB",
           "date": "18",
           "name": "Qualifiche",
-          "time": "16:00",
+          "time": "14:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -790,8 +798,7 @@
           "day": "DOM",
           "date": "19",
           "name": "Gara",
-          "time": "15:00",
-          "isRace": true,
+          "time": "13:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -801,22 +808,23 @@
               "name": "TV8 (differita 18:00)",
               "type": "free"
             }
-          ]
+          ],
+          "isRace": true
         }
       ]
     },
     {
       "id": "ungheria",
       "name": "GP Ungheria",
-      "track": "Hungaroring, Budapest",
-      "dates": "24–26 Luglio",
-      "raceDateTimeISO": "2026-07-26T15:00:00+02:00",
+      "track": "Hungaroring",
+      "dates": "24–26 Lug",
+      "raceDateTimeISO": "2026-07-26T13:00:00+00:00",
       "sessions": [
         {
           "day": "VEN",
           "date": "24",
           "name": "Prove Libere 1",
-          "time": "13:30",
+          "time": "11:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -828,7 +836,7 @@
           "day": "VEN",
           "date": "24",
           "name": "Prove Libere 2",
-          "time": "17:00",
+          "time": "15:00",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -840,7 +848,7 @@
           "day": "SAB",
           "date": "25",
           "name": "Prove Libere 3",
-          "time": "12:30",
+          "time": "10:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -852,7 +860,7 @@
           "day": "SAB",
           "date": "25",
           "name": "Qualifiche",
-          "time": "16:00",
+          "time": "14:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -868,8 +876,7 @@
           "day": "DOM",
           "date": "26",
           "name": "Gara",
-          "time": "15:00",
-          "isRace": true,
+          "time": "13:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -879,22 +886,23 @@
               "name": "TV8 (differita 18:00)",
               "type": "free"
             }
-          ]
+          ],
+          "isRace": true
         }
       ]
     },
     {
       "id": "olanda",
       "name": "GP Olanda",
-      "track": "Circuit Zandvoort",
-      "dates": "21–23 Agosto",
-      "raceDateTimeISO": "2026-08-23T15:00:00+02:00",
+      "track": "Zandvoort",
+      "dates": "21–23 Ago",
+      "raceDateTimeISO": "2026-08-23T13:00:00+00:00",
       "sessions": [
         {
           "day": "VEN",
           "date": "21",
           "name": "Prove Libere 1",
-          "time": "13:30",
+          "time": "10:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -906,7 +914,7 @@
           "day": "VEN",
           "date": "21",
           "name": "Qualifiche Sprint",
-          "time": "17:30",
+          "time": "14:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -922,7 +930,7 @@
           "day": "SAB",
           "date": "22",
           "name": "Sprint Race",
-          "time": "13:00",
+          "time": "10:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -938,7 +946,7 @@
           "day": "SAB",
           "date": "22",
           "name": "Qualifiche",
-          "time": "17:00",
+          "time": "14:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -954,8 +962,7 @@
           "day": "DOM",
           "date": "23",
           "name": "Gara",
-          "time": "15:00",
-          "isRace": true,
+          "time": "13:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -965,22 +972,23 @@
               "name": "TV8 (differita 18:00)",
               "type": "free"
             }
-          ]
+          ],
+          "isRace": true
         }
       ]
     },
     {
       "id": "italia",
       "name": "GP Italia",
-      "track": "Autodromo Nazionale di Monza",
-      "dates": "4–6 Settembre",
-      "raceDateTimeISO": "2026-09-06T15:00:00+02:00",
+      "track": "Monza",
+      "dates": "4–6 Set",
+      "raceDateTimeISO": "2026-09-06T13:00:00+00:00",
       "sessions": [
         {
           "day": "VEN",
           "date": "4",
           "name": "Prove Libere 1",
-          "time": "13:30",
+          "time": "10:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -992,7 +1000,7 @@
           "day": "VEN",
           "date": "4",
           "name": "Prove Libere 2",
-          "time": "17:00",
+          "time": "14:00",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -1004,7 +1012,7 @@
           "day": "SAB",
           "date": "5",
           "name": "Prove Libere 3",
-          "time": "12:30",
+          "time": "10:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -1016,7 +1024,7 @@
           "day": "SAB",
           "date": "5",
           "name": "Qualifiche",
-          "time": "16:00",
+          "time": "14:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -1032,8 +1040,7 @@
           "day": "DOM",
           "date": "6",
           "name": "Gara",
-          "time": "15:00",
-          "isRace": true,
+          "time": "13:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -1043,22 +1050,23 @@
               "name": "TV8 DIRETTA",
               "type": "free"
             }
-          ]
+          ],
+          "isRace": true
         }
       ]
     },
     {
       "id": "spagna",
       "name": "GP Spagna",
-      "track": "Circuito de Madrid",
-      "dates": "11–13 Settembre",
-      "raceDateTimeISO": "2026-09-13T15:00:00+02:00",
+      "track": "Madring",
+      "dates": "11–13 Set",
+      "raceDateTimeISO": "2026-09-13T13:00:00+00:00",
       "sessions": [
         {
           "day": "VEN",
           "date": "11",
           "name": "Prove Libere 1",
-          "time": "13:30",
+          "time": "11:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -1070,7 +1078,7 @@
           "day": "VEN",
           "date": "11",
           "name": "Prove Libere 2",
-          "time": "17:00",
+          "time": "15:00",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -1082,7 +1090,7 @@
           "day": "SAB",
           "date": "12",
           "name": "Prove Libere 3",
-          "time": "12:30",
+          "time": "10:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -1094,7 +1102,7 @@
           "day": "SAB",
           "date": "12",
           "name": "Qualifiche",
-          "time": "16:00",
+          "time": "14:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -1110,8 +1118,7 @@
           "day": "DOM",
           "date": "13",
           "name": "Gara",
-          "time": "15:00",
-          "isRace": true,
+          "time": "13:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -1121,22 +1128,35 @@
               "name": "TV8 (differita 18:00)",
               "type": "free"
             }
-          ]
+          ],
+          "isRace": true
         }
       ]
     },
     {
       "id": "azerbaijan",
       "name": "GP Azerbaijan",
-      "track": "Baku City Circuit",
-      "dates": "24–26 Settembre",
-      "raceDateTimeISO": "2026-09-26T13:00:00+04:00",
+      "track": "Baku",
+      "dates": "24–26 Set",
+      "raceDateTimeISO": "2026-09-26T11:00:00+00:00",
       "sessions": [
         {
-          "day": "VEN",
+          "day": "GIO",
           "date": "24",
           "name": "Prove Libere 1",
-          "time": "11:30",
+          "time": "08:30",
+          "channels": [
+            {
+              "name": "Sky Sport F1",
+              "type": "pay"
+            }
+          ]
+        },
+        {
+          "day": "GIO",
+          "date": "24",
+          "name": "Prove Libere 2",
+          "time": "12:00",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -1146,21 +1166,9 @@
         },
         {
           "day": "VEN",
-          "date": "24",
-          "name": "Prove Libere 2",
-          "time": "15:00",
-          "channels": [
-            {
-              "name": "Sky Sport F1",
-              "type": "pay"
-            }
-          ]
-        },
-        {
-          "day": "SAB",
           "date": "25",
           "name": "Prove Libere 3",
-          "time": "11:30",
+          "time": "08:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -1169,10 +1177,10 @@
           ]
         },
         {
-          "day": "SAB",
+          "day": "VEN",
           "date": "25",
           "name": "Qualifiche",
-          "time": "15:00",
+          "time": "12:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -1185,11 +1193,10 @@
           ]
         },
         {
-          "day": "DOM",
+          "day": "SAB",
           "date": "26",
           "name": "Gara",
-          "time": "13:00",
-          "isRace": true,
+          "time": "11:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -1199,22 +1206,23 @@
               "name": "TV8 (differita 17:00)",
               "type": "free"
             }
-          ]
+          ],
+          "isRace": true
         }
       ]
     },
     {
       "id": "singapore",
       "name": "GP Singapore",
-      "track": "Marina Bay Street Circuit",
-      "dates": "9–11 Ottobre",
-      "raceDateTimeISO": "2026-10-11T20:00:00+08:00",
+      "track": "Singapore",
+      "dates": "9–11 Ott",
+      "raceDateTimeISO": "2026-10-11T12:00:00+00:00",
       "sessions": [
         {
           "day": "VEN",
           "date": "9",
           "name": "Prove Libere 1",
-          "time": "17:30",
+          "time": "08:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -1226,7 +1234,7 @@
           "day": "VEN",
           "date": "9",
           "name": "Qualifiche Sprint",
-          "time": "21:30",
+          "time": "12:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -1242,7 +1250,7 @@
           "day": "SAB",
           "date": "10",
           "name": "Sprint Race",
-          "time": "17:00",
+          "time": "09:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -1258,7 +1266,7 @@
           "day": "SAB",
           "date": "10",
           "name": "Qualifiche",
-          "time": "21:00",
+          "time": "13:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -1274,8 +1282,7 @@
           "day": "DOM",
           "date": "11",
           "name": "Gara",
-          "time": "20:00",
-          "isRace": true,
+          "time": "12:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -1285,22 +1292,23 @@
               "name": "TV8 (differita)",
               "type": "free"
             }
-          ]
+          ],
+          "isRace": true
         }
       ]
     },
     {
       "id": "usa",
-      "name": "GP USA",
-      "track": "Circuit of the Americas, Austin",
-      "dates": "23–25 Ottobre",
-      "raceDateTimeISO": "2026-10-25T21:00:00+02:00",
+      "name": "GP Austin",
+      "track": "Austin",
+      "dates": "23–25 Ott",
+      "raceDateTimeISO": "2026-10-25T20:00:00+00:00",
       "sessions": [
         {
           "day": "VEN",
           "date": "23",
           "name": "Prove Libere 1",
-          "time": "19:30",
+          "time": "17:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -1312,7 +1320,7 @@
           "day": "VEN",
           "date": "23",
           "name": "Prove Libere 2",
-          "time": "23:00",
+          "time": "21:00",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -1324,7 +1332,7 @@
           "day": "SAB",
           "date": "24",
           "name": "Prove Libere 3",
-          "time": "19:30",
+          "time": "17:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -1336,7 +1344,7 @@
           "day": "SAB",
           "date": "24",
           "name": "Qualifiche",
-          "time": "23:00",
+          "time": "21:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -1352,8 +1360,7 @@
           "day": "DOM",
           "date": "25",
           "name": "Gara",
-          "time": "21:00",
-          "isRace": true,
+          "time": "20:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -1363,22 +1370,23 @@
               "name": "TV8 (differita)",
               "type": "free"
             }
-          ]
+          ],
+          "isRace": true
         }
       ]
     },
     {
       "id": "messico",
       "name": "GP Messico",
-      "track": "Autodromo Hermanos Rodríguez",
-      "dates": "30 Ottobre–1 Novembre",
-      "raceDateTimeISO": "2026-11-01T21:00:00+02:00",
+      "track": "Mexico City",
+      "dates": "30 Ott–1 Nov",
+      "raceDateTimeISO": "2026-11-01T20:00:00+00:00",
       "sessions": [
         {
           "day": "VEN",
           "date": "30",
           "name": "Prove Libere 1",
-          "time": "19:30",
+          "time": "18:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -1390,7 +1398,7 @@
           "day": "VEN",
           "date": "30",
           "name": "Prove Libere 2",
-          "time": "23:00",
+          "time": "22:00",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -1402,7 +1410,7 @@
           "day": "SAB",
           "date": "31",
           "name": "Prove Libere 3",
-          "time": "19:30",
+          "time": "17:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -1414,7 +1422,7 @@
           "day": "SAB",
           "date": "31",
           "name": "Qualifiche",
-          "time": "23:00",
+          "time": "21:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -1430,8 +1438,7 @@
           "day": "DOM",
           "date": "1",
           "name": "Gara",
-          "time": "21:00",
-          "isRace": true,
+          "time": "20:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -1441,16 +1448,17 @@
               "name": "TV8 (differita)",
               "type": "free"
             }
-          ]
+          ],
+          "isRace": true
         }
       ]
     },
     {
       "id": "brasile",
       "name": "GP Brasile",
-      "track": "Autodromo José Carlos Pace, São Paulo",
-      "dates": "6–8 Novembre",
-      "raceDateTimeISO": "2026-11-08T18:00:00+02:00",
+      "track": "Interlagos",
+      "dates": "6–8 Nov",
+      "raceDateTimeISO": "2026-11-08T17:00:00+00:00",
       "sessions": [
         {
           "day": "VEN",
@@ -1467,32 +1475,24 @@
         {
           "day": "VEN",
           "date": "6",
-          "name": "Qualifiche Sprint",
-          "time": "19:30",
+          "name": "Prove Libere 2",
+          "time": "19:00",
           "channels": [
             {
               "name": "Sky Sport F1",
               "type": "pay"
-            },
-            {
-              "name": "TV8",
-              "type": "free"
             }
           ]
         },
         {
           "day": "SAB",
           "date": "7",
-          "name": "Sprint Race",
-          "time": "15:00",
+          "name": "Prove Libere 3",
+          "time": "14:30",
           "channels": [
             {
-              "name": "Sky Sport F1 / Uno",
+              "name": "Sky Sport F1",
               "type": "pay"
-            },
-            {
-              "name": "TV8",
-              "type": "free"
             }
           ]
         },
@@ -1500,7 +1500,7 @@
           "day": "SAB",
           "date": "7",
           "name": "Qualifiche",
-          "time": "19:00",
+          "time": "18:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -1516,8 +1516,7 @@
           "day": "DOM",
           "date": "8",
           "name": "Gara",
-          "time": "18:00",
-          "isRace": true,
+          "time": "17:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -1527,22 +1526,23 @@
               "name": "TV8 (differita)",
               "type": "free"
             }
-          ]
+          ],
+          "isRace": true
         }
       ]
     },
     {
       "id": "las-vegas",
       "name": "GP Las Vegas",
-      "track": "Las Vegas Strip Circuit",
-      "dates": "19–21 Novembre",
-      "raceDateTimeISO": "2026-11-22T06:00:00+01:00",
+      "track": "Las Vegas",
+      "dates": "20–22 Nov",
+      "raceDateTimeISO": "2026-11-22T04:00:00+00:00",
       "sessions": [
         {
-          "day": "GIO",
-          "date": "19",
+          "day": "VEN",
+          "date": "20",
           "name": "Prove Libere 1",
-          "time": "04:30",
+          "time": "00:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -1551,51 +1551,34 @@
           ]
         },
         {
-          "day": "GIO",
-          "date": "19",
+          "day": "VEN",
+          "date": "20",
           "name": "Prove Libere 2",
-          "time": "08:00",
+          "time": "04:00",
           "channels": [
             {
               "name": "Sky Sport F1",
               "type": "pay"
-            }
-          ]
-        },
-        {
-          "day": "VEN",
-          "date": "20",
-          "name": "Prove Libere 3",
-          "time": "04:30",
-          "channels": [
-            {
-              "name": "Sky Sport F1",
-              "type": "pay"
-            }
-          ]
-        },
-        {
-          "day": "VEN",
-          "date": "20",
-          "name": "Qualifiche",
-          "time": "08:00",
-          "channels": [
-            {
-              "name": "Sky Sport F1 / Uno",
-              "type": "pay"
-            },
-            {
-              "name": "TV8 (differita)",
-              "type": "free"
             }
           ]
         },
         {
           "day": "SAB",
           "date": "21",
-          "name": "Gara",
-          "time": "06:00",
-          "isRace": true,
+          "name": "Prove Libere 3",
+          "time": "00:30",
+          "channels": [
+            {
+              "name": "Sky Sport F1",
+              "type": "pay"
+            }
+          ]
+        },
+        {
+          "day": "SAB",
+          "date": "21",
+          "name": "Qualifiche",
+          "time": "04:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -1606,57 +1589,66 @@
               "type": "free"
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": "qatar",
-      "name": "GP Qatar",
-      "track": "Lusail International Circuit",
-      "dates": "27–29 Novembre",
-      "raceDateTimeISO": "2026-11-29T19:00:00+03:00",
-      "sessions": [
-        {
-          "day": "VEN",
-          "date": "27",
-          "name": "Prove Libere 1",
-          "time": "15:30",
-          "channels": [
-            {
-              "name": "Sky Sport F1",
-              "type": "pay"
-            }
-          ]
         },
         {
-          "day": "VEN",
-          "date": "27",
-          "name": "Qualifiche Sprint",
-          "time": "19:30",
-          "channels": [
-            {
-              "name": "Sky Sport F1",
-              "type": "pay"
-            },
-            {
-              "name": "TV8",
-              "type": "free"
-            }
-          ]
-        },
-        {
-          "day": "SAB",
-          "date": "28",
-          "name": "Sprint Race",
-          "time": "15:00",
+          "day": "DOM",
+          "date": "22",
+          "name": "Gara",
+          "time": "04:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
               "type": "pay"
             },
             {
-              "name": "TV8",
+              "name": "TV8 (differita)",
               "type": "free"
+            }
+          ],
+          "isRace": true
+        }
+      ]
+    },
+    {
+      "id": "qatar",
+      "name": "GP Qatar",
+      "track": "Lusail",
+      "dates": "27–29 Nov",
+      "raceDateTimeISO": "2026-11-29T16:00:00+00:00",
+      "sessions": [
+        {
+          "day": "VEN",
+          "date": "27",
+          "name": "Prove Libere 1",
+          "time": "13:30",
+          "channels": [
+            {
+              "name": "Sky Sport F1",
+              "type": "pay"
+            }
+          ]
+        },
+        {
+          "day": "VEN",
+          "date": "27",
+          "name": "Prove Libere 2",
+          "time": "17:00",
+          "channels": [
+            {
+              "name": "Sky Sport F1",
+              "type": "pay"
+            }
+          ]
+        },
+        {
+          "day": "SAB",
+          "date": "28",
+          "name": "Prove Libere 3",
+          "time": "14:30",
+          "channels": [
+            {
+              "name": "Sky Sport F1",
+              "type": "pay"
             }
           ]
         },
@@ -1664,7 +1656,7 @@
           "day": "SAB",
           "date": "28",
           "name": "Qualifiche",
-          "time": "19:00",
+          "time": "18:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -1680,8 +1672,7 @@
           "day": "DOM",
           "date": "29",
           "name": "Gara",
-          "time": "19:00",
-          "isRace": true,
+          "time": "16:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -1691,7 +1682,8 @@
               "name": "TV8 (differita)",
               "type": "free"
             }
-          ]
+          ],
+          "isRace": true
         }
       ]
     },
@@ -1699,14 +1691,14 @@
       "id": "abu-dhabi",
       "name": "GP Abu Dhabi",
       "track": "Yas Marina Circuit",
-      "dates": "4–6 Dicembre",
-      "raceDateTimeISO": "2026-12-06T14:00:00+04:00",
+      "dates": "4–6 Dic",
+      "raceDateTimeISO": "2026-12-06T13:00:00+00:00",
       "sessions": [
         {
           "day": "VEN",
           "date": "4",
           "name": "Prove Libere 1",
-          "time": "11:30",
+          "time": "09:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -1718,7 +1710,7 @@
           "day": "VEN",
           "date": "4",
           "name": "Prove Libere 2",
-          "time": "15:00",
+          "time": "13:00",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -1730,7 +1722,7 @@
           "day": "SAB",
           "date": "5",
           "name": "Prove Libere 3",
-          "time": "12:30",
+          "time": "10:30",
           "channels": [
             {
               "name": "Sky Sport F1",
@@ -1742,7 +1734,7 @@
           "day": "SAB",
           "date": "5",
           "name": "Qualifiche",
-          "time": "16:00",
+          "time": "14:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -1758,8 +1750,7 @@
           "day": "DOM",
           "date": "6",
           "name": "Gara",
-          "time": "14:00",
-          "isRace": true,
+          "time": "13:00",
           "channels": [
             {
               "name": "Sky Sport F1 / Uno",
@@ -1769,7 +1760,8 @@
               "name": "TV8 DIRETTA",
               "type": "free"
             }
-          ]
+          ],
+          "isRace": true
         }
       ]
     }
