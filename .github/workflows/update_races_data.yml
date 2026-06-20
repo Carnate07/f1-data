@@ -1,31 +1,34 @@
 name: Aggiorna races-data.json
-
 on:
   schedule:
+    # ── Domenica: copre la fine gara in tutti i fusi orari ──────────────
+    # Asia/Oceania (Australia, Cina, Giappone, Singapore, Azerbaijan, Qatar, Abu Dhabi)
+    - cron: "0 9 * * 0"    # 09:00 UTC = 11:00 CEST / mattina presto in Italia dopo gare asiatiche
+    # Europa (Austria, Gran Bretagna, Belgio, Ungheria, Olanda, Italia, Spagna, Monaco, Catalunya)
+    - cron: "0 15 * * 0"   # 15:00 UTC = 17:00 CEST, poco dopo la bandiera a scacchi
+    - cron: "0 18 * * 0"   # 18:00 UTC = 20:00 CEST, rete di sicurezza serale
+    # Americhe (Miami, Canada, Austin, Messico, Brasile, Las Vegas)
+    - cron: "0 23 * * 0"   # 23:00 UTC = 01:00 CEST lunedì, dopo gare USA/Canada/Brasile
+    - cron: "0 4 * * 1"    # 04:00 UTC lunedì, dopo Las Vegas (gara notturna USA/Pacifico)
+    # ── Lunedì mattina: rete di sicurezza settimanale finale ────────────
     - cron: "0 6 * * 1"
   workflow_dispatch:
-
 jobs:
   update:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-
       - name: Installa dipendenze
         run: pip install requests pytz
-
       - name: Esegui script aggiornamento
         run: python update_races_data.py
-
       - name: Commit e push se ci sono modifiche
         run: |
           git config user.name "github-actions[bot]"
